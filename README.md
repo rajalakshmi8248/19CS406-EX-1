@@ -3,9 +3,12 @@
 DATE :09-03-2023
 
 AIM :
+
 To implement socket programming date and time display from client to server using TCPSockets
 
 ALGORITHM :
+
+
 Server:
 
 1.Create a server socket and bind it to port.
@@ -17,7 +20,9 @@ Server:
 7.Close all streams.
 8.Close the server socket.
 9.Stop.
+
 Client:
+
 
 1.Create a client socket and connect it to the server‟s port number.
 2.Retrieve its own IP address using built-in function.
@@ -31,7 +36,9 @@ Client:
 
 
 PROGRAM :
+
 CLIENT:
+
 import socket
 from datetime import datetime
 s=socket.socket()
@@ -47,6 +54,7 @@ if ack:
 c.close()
 
 SERVER:
+
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -62,4 +70,5 @@ OUTPUT:
 
 
 RESULT:
+
 Thus, the program to implement socket programming date and time display from client to server using TCP Sockets was successfully executed.
